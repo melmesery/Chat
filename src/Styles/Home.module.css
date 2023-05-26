@@ -1,0 +1,159 @@
+.profile {
+  background: transparent !important;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  display: block !important;
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  margin: 10px auto !important;
+}
+
+.chat_text {
+  background: #fff;
+}
+
+.chat_list {
+  background: #fff;
+  height: 300px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat_area {
+  height: 300px !important;
+  overflow-y: scroll;
+}
+
+.chat_drop {
+  width: 200px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.name {
+  font-size: 10px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.friend_avatar {
+  width: 40px !important;
+}
+
+.message {
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border: 3px #e6e6eb solid;
+  outline: none !important;
+}
+
+.message_btn {
+  width: 100px;
+  border: none !important;
+  background: #90dfaa;
+  color: #fff;
+}
+
+.message_time {
+  margin-top: 2px;
+  font-size: 8px;
+}
+
+.me {
+  width: fit-content;
+  background: #facc59;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.friend {
+  width: fit-content;
+  background: #f3f4f6;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.status_green {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: grid;
+  place-items: center;
+  background: green;
+  color: green;
+  width: 8px;
+  height: 8px;
+  font-size: 5px;
+  border-radius: 50%;
+}
+
+.status_red {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: grid;
+  place-items: center;
+  background: red;
+  color: red;
+  width: 8px;
+  height: 8px;
+  font-size: 5px;
+  border-radius: 50%;
+}
+
+@media (max-width: 320px) {
+  .chat_area {
+    height: 200px !important;
+  }
+
+  .avatar {
+    display: block !important;
+    width: 80px !important;
+    margin-top: 20px !important;
+  }
+
+  .name {
+    font-size: 8px;
+  }
+
+  .message {
+    padding: 5px !important;
+  }
+
+  .message_btn {
+    width: 70px;
+    border: none !important;
+    background: #90dfaa;
+    color: #fff;
+  }
+
+  .status_green,
+  .status_red {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+  }
+
+  .friend_avatar {
+    width: 30px !important;
+  }
+
+  .me,
+  .friend {
+    font-size: 10px;
+  }
+}
