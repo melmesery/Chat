@@ -25,8 +25,8 @@ const ForgetPassword = () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.message === "Done") {
-            navigate("/reset-password");
             window.alert("Code sent");
+            navigate("/reset-password");
           } else {
             setErrors(data.message);
           }
